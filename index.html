@@ -4,39 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
     <title>company</title>
 </head>
 <body>
     <main>
-        <div class="sideBar">
-            <div class="sideMainTitle">
+        <div id="sideBarId" class="sideBar main">
+            <div class="sideMainTitle" onclick="goPage(1)">
                 <h1>Works</h1>
             </div>
             <div class="index">
-                <div class="index1 indexContent">
+                <div id="index1Component" class="index1 indexContent" onclick="goPage(1)">
                     <div class="indexName" id="index1Name">mainspace</div>
                     <div id="index1Number">01</div>
                 </div>
-                <div class="index2 indexContent">
+                <div id="index2Component" class="index2 indexContent" onclick="goPage(2)">
                     <div class="indexName" id="index2Name">works</div>
                     <div id="index2Number">02</div>
                 </div>
-                <div class="index3 indexContent">
+                <div id="index3Component" class="index3 indexContent" onclick="goPage(3)">
                     <div class="indexName" id="index3Name">snack bar</div>
                     <div id="index3Number">03</div>
                 </div>
-                <div class="index4 indexContent">
+                <div id="index4Component" class="index4 indexContent" onclick="goPage(4)">
                     <div class="indexName" id="index4Name">rest</div>
                     <div id="index4Number">04</div>
                 </div>
-                <div class="index5 indexContent">
+                <div id="index5Component" class="index5 indexContent" onclick="goPage(5)">
                     <div class="indexName" id="index5Name">meet</div>
                     <div id="index5Number">05</div>
                 </div>
             </div>
         </div>
-        <div class="contentPage">
-            
+        <div id="contentPageId" class="contentPage main">
+            <iframe id="iframe_content" src="mainspace.html" frameborder="0"></iframe>
         </div>
     </main>
     
